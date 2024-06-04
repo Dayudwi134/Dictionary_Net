@@ -133,7 +133,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* style navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -158,3 +158,34 @@ body {
     text-decoration: underline;
 }
 
+.home {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.home .logo-large {
+    max-width: 600px;
+    height: auto;
+    margin-left: 350px;
+    margin-right: 250px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.home p {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    /* padding-left: 20px; */
+}
+
+.home-content .deskripsi {
+    font-size: 50px;
+    font-family: 'DM Srif Display';
+    color: #2a6296;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+
+}
