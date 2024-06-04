@@ -96,3 +96,36 @@ input[type=text], input[type=password], input[type=email] {
     padding: 30px;
     margin-top: 20px;
 }
+
+.box-signup {
+    margin-left: 32%;
+    margin-right: 32%;
+    padding: 30px;
+    background-color: #2A629A;
+    margin-top: 3%;
+    box-shadow: 1px 1px 5px;
+}
+
+.box-signup p {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.signup {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
