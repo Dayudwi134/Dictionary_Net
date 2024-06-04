@@ -158,6 +158,7 @@ body {
     text-decoration: underline;
 }
 
+/*  style home */
 .home {
     margin-top: 50px;
     align-items: center;
@@ -188,4 +189,23 @@ body {
     text-align: center;
     font-weight: 700;
 
+}
+
+.tbl-pink {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #2a6296; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 18px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.tbl-pink:hover {
+    background-color: #2a6296 
 }
