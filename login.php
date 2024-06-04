@@ -1,6 +1,9 @@
 <?php
 session_start();
 require_once 'koneksi.php';
+
+$error_msg = ''; 
+
 ?>
 
 
