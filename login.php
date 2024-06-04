@@ -18,7 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $row['username'];
             header("Location: index.html");
             exit;
+
+        } else {
+            $error_msg = "Username/email atau password salah.";
         }
+    }
 }
 
 ?>
