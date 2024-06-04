@@ -11,6 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO tb_user (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
 
     if ($conn->query($sql) === TRUE) {
+        
+        header("Location: login.php");
+        exit;
     }
 
 }
