@@ -10,6 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "SELECT * FROM tb_user WHERE username='$username_email' OR email='$username_email'";
     $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) { 
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row['password'])) { 
+        }
 }
 
 ?>
