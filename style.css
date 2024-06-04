@@ -1,0 +1,28 @@
+/* masuk ke login */
+.judul {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 15%;
+}
+
+.judulbox {
+    margin-top: 15px;
+    background-color: brown;
+    border-radius: 15px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+}
+
+.judulbox:hover {
+    background-color: orange;
+}
+.judul a {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
