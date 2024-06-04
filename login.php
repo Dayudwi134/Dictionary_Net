@@ -7,6 +7,9 @@ $error_msg = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $username_email = $_POST['uname'];
     $password = $_POST['psw'];
+
+    $sql = "SELECT * FROM tb_user WHERE username='$username_email' OR email='$username_email'";
+    $result = $conn->query($sql);
 }
 
 ?>
