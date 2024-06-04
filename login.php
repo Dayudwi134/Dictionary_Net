@@ -4,6 +4,11 @@ require_once 'koneksi.php';
 
 $error_msg = ''; 
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $username_email = $_POST['uname'];
+    $password = $_POST['psw'];
+}
+
 ?>
 
 
