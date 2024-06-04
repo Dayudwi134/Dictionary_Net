@@ -209,3 +209,22 @@ body {
 .tbl-pink:hover {
     background-color: #2a6296 
 }
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    font-size: 25px;
+    font-weight: 500;
+    color: #2a6296;
+}
+
+.about-content {
+    display: block;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
