@@ -49,6 +49,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="psw"><b>Password</b></label><br>
             <input type="password" placeholder="Password" name="psw" required><br>
             <button type="submit" class="btn">Login</button>
+           
+            <?php if ($error_msg): ?> 
+                <div class="error-msg"><?php echo $error_msg; ?></div> 
+            <?php endif; ?>
+            
         </form>
     </div>
         <div class="acc-sign"><a href="signup.php">Don't have an account? Sign up now</a></div>
