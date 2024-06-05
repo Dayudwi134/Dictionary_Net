@@ -1,139 +1,10 @@
-.judul {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 42px;
-    margin-top: 15%;
-}
-
-.judulbox {
-    margin-top: 15px;
-    background-color: brown;
-    border-radius: 15px;
-    padding: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 200px;
-}
-
-.judulbox:hover {
-    background-color: orange;
-}
-.judul a {
-    color: white;
-    font-weight: normal;
-    font-size: 20px;
-}
-
-.box-login {
-    margin-left: 32%;
-    margin-right: 32%;
-    padding: 30px;
-    background-color: #2A629A;
-    margin-top: 3%;
-    box-shadow: 1px 1px 5px;
-}
-
-.box-login p {
-    font-size: 34px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
-
-.login {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-input[type=text], input[type=password], input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.btn {
-    border-style: none;
-    padding: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    background-color: #DC5F00;
-    width: 120px;
-    border-radius: 15px;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background-color: orange;
-}
-
-.acc-sign {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.acc-sign a {
-    color: white;
-}
-
-.acc-sign a:hover {
-    color: black;
-}
-
-.box-sistem {
-    background-color: white;
-    box-shadow: 2px 2px 6px;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    padding: 30px;
-    margin-top: 20px;
-}
-
-.box-signup {
-    margin-left: 32%;
-    margin-right: 32%;
-    padding: 30px;
-    background-color: #2A629A;
-    margin-top: 3%;
-    box-shadow: 1px 1px 5px;
-}
-
-.box-signup p {
-    font-size: 34px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
-
-.signup {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-input[type=text], input[type=password], input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
-/* style navbar */
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -148,6 +19,10 @@ body {
     text-decoration: none;
 }
 
+.navbar .menu {
+    display: flex;
+}
+
 .navbar .menu a {
     color: white;
     margin-left: 20px;
@@ -158,85 +33,106 @@ body {
     text-decoration: underline;
 }
 
-/*  style home */
+/* Toggle Button for Mobile */
+.navbar .toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.navbar .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #2a6296;
+    padding: 10px 20px;
+}
+
+.navbar .menu.active a {
+    margin: 10px 0;
+}
+
+/* Home */
 .home {
     margin-top: 50px;
-    align-items: center;
+    text-align: center;
 }
 
 .home .logo-large {
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
-    margin-left: 350px;
-    margin-right: 250px;
-    align-items: center;
-    text-align: center;
-
+    margin: 0 auto;
 }
 
 .home p {
     font-size: 18px;
     margin-top: 20px;
     text-align: left;
-    /* padding-left: 20px; */
+    padding-left: 20px;
 }
 
 .home-content .deskripsi {
-    font-size: 50px;
-    font-family: 'DM Srif Display';
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display';
     color: #2a6296;
-    justify-content: center;
-    text-align: center;
     font-weight: 700;
-
+    text-align: center;
 }
 
 .tbl-pink {
     display: flex;
     padding: 10px 20px;
-    background-color: #2a6296; 
+    background-color: #2a6296;
     color: white;
-    text-decoration: none; 
-    border-radius: 18px; 
-    font-size: 16px; 
-    font-weight: bold; 
-    transition: background-color 0.3s ease; 
-    text-align: center;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
     justify-content: center;
     margin: auto;
 }
 
 .tbl-pink:hover {
-    background-color: #2a6296 
+    background-color: #1e4a72;
 }
 
-
+/* About */
 .about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding-bottom: 2rem;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #2a6296;
 }
 
 .about-content {
-    display: block;
-    align-items: center;
     text-align: center;
-    height: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* css untuk sistem */
-.sistem{
+/* Sistem */
+.sistem {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.sistem :not(i){
+.sistem :not(i) {
     font-family: "Poppins", sans-serif;
 }
 
@@ -256,7 +152,6 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .search-box input {
@@ -326,7 +221,114 @@ body {
     text-align: center;
 }
 
-.tombol-index a{
+/* General Styles */
+.judul {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 15%;
+}
+
+.judulbox {
+    margin-top: 15px;
+    background-color: brown;
+    border-radius: 15px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+}
+
+.judulbox:hover {
+    background-color: orange;
+}
+
+.judul a {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.box-login,
+.box-signup {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: #2A629A;
+    margin-top: 3%;
+    box-shadow: 1px 1px 5px;
+    width: 80%;
+}
+
+.box-login p,
+.box-signup p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.login,
+.signup {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    border-style: none;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #DC5F00;
+    width: 120px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.acc-sign {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.acc-sign a {
+    color: white;
+}
+
+.acc-sign a:hover {
+    color: black;
+}
+
+.box-sistem {
+    background-color: white;
+    box-shadow: 2px 2px 6px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.tombol-index a {
     padding: 20px;
     width: 20%;
 }
@@ -335,4 +337,98 @@ body {
     display: block;
     margin: 0 auto;
 }
-/* css untuk sistem */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar .logo a,
+    .navbar .menu a {
+        font-size: 18px;
+    }
+
+    .home-content .deskripsi {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1.25rem;
+    }
+
+    .box-login,
+    .box-signup {
+        width: 90%;
+    }
+
+    .judul {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .toggle-button {
+        display: flex;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 50px;
+    }
+
+    .home p {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .home-content .deskripsi {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 40px 20px;
+    }
+
+    .about-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content .deskripsi {
+        font-size: 1.5rem;
+    }
+
+    .box-login p,
+    .box-signup p {
+        font-size: 1.25rem;
+    }
+
+    .judul {
+        font-size: 1.75rem;
+    }
+
+    .box-login,
+    .box-signup {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input
+    ,
+    .search-box button {
+        width: 100%;
+    }
+
+    .search-box button {
+        margin-top: 10px;
+    }
+}
